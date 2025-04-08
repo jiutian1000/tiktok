@@ -1,6 +1,6 @@
 module github.com/jiutian1000/tiktok
 
-go 1.17
+go 1.22.0
 
 require (
 	github.com/go-playground/validator/v10 v10.10.1
