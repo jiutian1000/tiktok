@@ -1,0 +1,120 @@
+[
+  {
+    "name": "Official example",
+    "args": {
+      "app_key": "12abcd",
+      "app_secret": "123",
+      "access_token": "abc1c123-3128-aa17-125e-2d2d51ab814fa",
+      "shop_id": "123456",
+      "req": {
+        "update_time_from": 1558152466,
+        "update_time_to": 1671224452,
+        "reverse_type": 3,
+        "offset": 1,
+        "size": 10,
+        "reverse_order_status": 1,
+        "order_id": 111111,
+        "reverse_order_id": 222222
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "https://open-api.tiktokglobalshop.com/api/reverse/reverse_order/list",
+      "headers": {},
+      "query": "access_token=abc1c123-3128-aa17-125e-2d2d51ab814fa&app_key=12abcd&shop_id=123456&sign=711619b0c6073ea3e00c4b3c47b8f65159b0e2cfb4bb1281feaf0edd43f75c25&timestamp=1600000000",
+      "body": {
+        "update_time_from": 1558152466,
+        "update_time_to": 1671224452,
+        "reverse_type": 3,
+        "offset": 1,
+        "size": 10,
+        "reverse_order_status": 1,
+        "order_id": 111111,
+        "reverse_order_id": 222222
+      }
+    },
+    "response": {
+      "status": 200,
+      "body": {
+        "code": 0,
+        "data": {
+          "more": true,
+          "reverse_list": [
+            {
+              "currency": "IDR",
+              "order_id": "576461302937453663",
+              "refund_total": "5000",
+              "return_item_list": [
+                {
+                  "product_images": "",
+                  "return_product_id": "",
+                  "return_product_name": "",
+                  "return_quantity": 0,
+                  "seller_sku": "",
+                  "sku_id": "",
+                  "sku_name": ""
+                }
+              ],
+              "return_reason": "Package wasn't received",
+              "return_tracking_id": "E0h1y0j4l1F8G3U6X7p8",
+              "reverse_order_id": "4035225888722551903",
+              "reverse_record_list": [
+                {
+                  "additional_image_list": [""],
+                  "additional_message": "I want to return",
+                  "description": "",
+                  "reason_text": "Package wasn't received",
+                  "update_time": 1527955200
+                }
+              ],
+              "reverse_request_time": 1527955200,
+              "reverse_status_value": 1,
+              "reverse_type": 2,
+              "reverse_update_time": 1527955200
+            }
+          ]
+        },
+        "message": "Success",
+        "request_id": "202203070749000101890810281E8C70B7"
+      }
+    },
+    "want": {
+      "more": true,
+      "reverse_list": [
+        {
+          "currency": "IDR",
+          "order_id": "576461302937453663",
+          "refund_total": "5000",
+          "return_item_list": [
+            {
+              "product_images": "",
+              "return_product_id": "",
+              "return_product_name": "",
+              "return_quantity": 0,
+              "seller_sku": "",
+              "sku_id": "",
+              "sku_name": ""
+            }
+          ],
+          "return_reason": "Package wasn't received",
+          "return_tracking_id": "E0h1y0j4l1F8G3U6X7p8",
+          "reverse_order_id": "4035225888722551903",
+          "reverse_record_list": [
+            {
+              "additional_image_list": [""],
+              "additional_message": "I want to return",
+              "description": "",
+              "reason_text": "Package wasn't received",
+              "update_time": 1527955200
+            }
+          ],
+          "reverse_request_time": 1527955200,
+          "reverse_status_value": 1,
+          "reverse_type": 2,
+          "reverse_update_time": 1527955200
+        }
+      ]
+    },
+    "want_err": false
+  }
+]

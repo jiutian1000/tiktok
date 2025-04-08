@@ -1,0 +1,25 @@
+# https://taskfile.dev
+
+version: "3"
+
+dotenv: [".env"]
+
+tasks:
+  default:
+    cmds:
+      - go test -v -race -timeout 10m -coverprofile=coverage.txt -cover ./...
+      - go tool cover -func coverage.txt
+
+  integration:
+    cmds:
+      - go test -v -race -timeout 10m -tags integration -coverprofile=coverage.txt -cover -failfast ./...
+      - go tool cover -func coverage.txt
+
+  format:
+    cmds:
+      - go install mvdan.cc/gofumpt@latest
+      - gofumpt -l -w .
+      - go install github.com/daixiang0/gci@latest
+      - gci write .
+      - go install golang.org/x/tools/cmd/goimports@latest
+      - goimports -w .

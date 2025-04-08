@@ -1,0 +1,61 @@
+[
+    {
+        "name": "GetBrand unit test",
+        "args": {
+            "app_key": "12abcd",
+            "app_secret": "123",
+            "access_token": "abc1c123-3128-aa17-125e-2d2d51ab814fa",
+            "shop_id": "123456",
+            "category_id": "1234"
+        },
+        "request": {
+            "method": "GET",
+            "url": "https://open-api.tiktokglobalshop.com/api/products/brands",
+            "headers": {},
+            "query": "access_token=abc1c123-3128-aa17-125e-2d2d51ab814fa&app_key=12abcd&category_id=1234&shop_id=123456&sign=e281f39a6508649634617c98a1dd5f2617d21144625c4441da87dee474ca7bd4&timestamp=1600000000"
+        },
+        "response": {
+            "status": 200,
+            "body": {
+                "code": 0,
+                "message": "Success",
+                "request_id": "111111",
+                "data": {
+                    "code": 0,
+                    "message": "Success",
+                    "request_id": "111111111",
+                    "data": {
+                        "brand_list": [
+                            {
+                                "id": "1111111",
+                                "name": "aaa"
+                            },
+                            {
+                                "id": "2222222",
+                                "name": "bbb"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "want": {
+            "code": 0,
+            "message": "Success",
+            "request_id": "111111111",
+            "data": {
+                "brand_list": [
+                    {
+                        "id": "1111111",
+                        "name": "aaa"
+                    },
+                    {
+                        "id": "2222222",
+                        "name": "bbb"
+                    }
+                ]
+            }
+        },
+        "want_err": false
+    }
+]

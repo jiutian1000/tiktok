@@ -1,0 +1,351 @@
+[
+  {
+    "name": "GetProductDetail unit test",
+    "args": {
+      "app_key": "12abcd",
+      "app_secret": "123",
+      "access_token": "abc1c123-3128-aa17-125e-2d2d51ab814fa",
+      "shop_id": "123456",
+      "product_id": "123123123123123"
+    },
+    "request": {
+      "method": "GET",
+      "url": "https://open-api.tiktokglobalshop.com/api/products/details",
+      "headers": {},
+      "query": "access_token=abc1c123-3128-aa17-125e-2d2d51ab814fa&app_key=12abcd&product_id=123123123123123&shop_id=123456&sign=3c859ee8285fde6816f31aff7cca15dd75e6cc9061d6bb32c22ccf8429c931f8&timestamp=1600000000"
+    },
+    "response": {
+      "status": 200,
+      "body": {
+        "code": 0,
+        "message": "Success",
+        "request_id": "123123123",
+        "data": {
+          "product_id": "A",
+          "product_status": 1,
+          "product_name": "A",
+          "category_list": [
+            {
+              "id": "C1",
+              "parent_id": "003",
+              "local_display_name": "LAKE-NIKE",
+              "is_leaf": false
+            }
+          ],
+          "brand": {
+            "id": "P",
+            "name": "Nike",
+            "status": 0
+          },
+          "images": [
+            {
+              "id": "ACC",
+              "height": 1,
+              "width": 2,
+              "thumb_url_list": [
+                "01.JPG",
+                "02.JPG"
+              ],
+              "url_list": [
+                "www.google.com",
+                "twitter.com"
+              ]
+            }
+          ],
+          "video": {
+            "duration": 12.5,
+            "id": "tokyo",
+            "media_type": "mkv",
+            "post_url": "www.yyets.com",
+            "video_infos": [
+              {
+                "backup_url": "www.g.com",
+                "bitrate": 1024,
+                "file_hash": "29393ns9s23=",
+                "format": "mpv",
+                "height": 1,
+                "main_url": "shipping.com",
+                "size": 1,
+                "url_expire": 3600,
+                "width": 2
+              }
+            ]
+          },
+          "description": "nike sb series",
+          "warranty_period": {
+            "warranty_id": 996,
+            "warranty_description": "996 day"
+          },
+          "warranty_policy": "free return",
+          "package_height": 100,
+          "package_length": 99,
+          "package_width": 7,
+          "package_weight": "100kg",
+          "skus": [
+            {
+              "id": "zh-fz-01",
+              "seller_sku": "ship-id-iphone13",
+              "price": {
+                "currency": "IDR",
+                "original_price": "100",
+                "price_include_vat": "1"
+              },
+              "stock_infos": [
+                {
+                  "warehouse_id": "001",
+                  "available_stock": 10
+                }
+              ],
+              "sales_attributes": [
+                {
+                  "id": "001",
+                  "name": "ABC",
+                  "value_id": "9",
+                  "value_name": "COLOR",
+                  "sku_img": {
+                    "id": "ACC",
+                    "height": 1,
+                    "width": 2,
+                    "thumb_url_list": [
+                      "01.JPG",
+                      "02.JPG"
+                    ],
+                    "url_list": [
+                      "www.google.com",
+                      "twitter.com"
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "product_certifications": [
+            {
+              "id": "1a",
+              "title": "disney",
+              "files": [
+                {
+                  "id": "1",
+                  "list": [
+                    "P",
+                    "Q"
+                  ],
+                  "name": "QQ",
+                  "type": "PDF"
+                }
+              ],
+              "images": null
+            }
+          ],
+          "size_chart": {
+            "id": "ACC",
+            "height": 1,
+            "width": 2,
+            "thumb_url_list": [
+              "01.JPG",
+              "02.JPG"
+            ],
+            "url_list": [
+              "www.google.com",
+              "twitter.com"
+            ]
+          },
+          "is_cod_open": false,
+          "product_attributes": [
+            {
+              "id": "12",
+              "name": "pptv",
+              "values": [
+                {
+                  "id": "LL",
+                  "name": "waka"
+                }
+              ]
+            }
+          ],
+          "qc_reasons": [
+            {
+              "reason": "Illegal",
+              "sub_reasons": [
+                "R18",
+                "AV"
+              ]
+            }
+          ],
+          "update_time": 1652684619,
+          "create_time": 1652684619,
+          "delivery_services": [
+            {
+              "delivery_service_id": 12,
+              "delivery_option_name": "J\u0026T Express",
+              "delivery_service_status": false
+            }
+          ]
+        }
+      }
+    },
+    "want": {
+      "product_id": "A",
+      "product_status": 1,
+      "product_name": "A",
+      "category_list": [
+        {
+          "id": "C1",
+          "parent_id": "003",
+          "local_display_name": "LAKE-NIKE",
+          "is_leaf": false
+        }
+      ],
+      "brand": {
+        "id": "P",
+        "name": "Nike",
+        "status": 0
+      },
+      "images": [
+        {
+          "id": "ACC",
+          "height": 1,
+          "width": 2,
+          "thumb_url_list": [
+            "01.JPG",
+            "02.JPG"
+          ],
+          "url_list": [
+            "www.google.com",
+            "twitter.com"
+          ]
+        }
+      ],
+      "video": {
+        "duration": 12.5,
+        "id": "tokyo",
+        "media_type": "mkv",
+        "post_url": "www.yyets.com",
+        "video_infos": [
+          {
+            "backup_url": "www.g.com",
+            "bitrate": 1024,
+            "file_hash": "29393ns9s23=",
+            "format": "mpv",
+            "height": 1,
+            "main_url": "shipping.com",
+            "size": 1,
+            "url_expire": 3600,
+            "width": 2
+          }
+        ]
+      },
+      "description": "nike sb series",
+      "warranty_period": {
+        "warranty_id": 996,
+        "warranty_description": "996 day"
+      },
+      "warranty_policy": "free return",
+      "package_height": 100,
+      "package_length": 99,
+      "package_width": 7,
+      "package_weight": "100kg",
+      "skus": [
+        {
+          "id": "zh-fz-01",
+          "seller_sku": "ship-id-iphone13",
+          "price": {
+            "currency": "IDR",
+            "original_price": "100",
+            "price_include_vat": "1"
+          },
+          "stock_infos": [
+            {
+              "warehouse_id": "001",
+              "available_stock": 10
+            }
+          ],
+          "sales_attributes": [
+            {
+              "id": "001",
+              "name": "ABC",
+              "value_id": "9",
+              "value_name": "COLOR",
+              "sku_img": {
+                "id": "ACC",
+                "height": 1,
+                "width": 2,
+                "thumb_url_list": [
+                  "01.JPG",
+                  "02.JPG"
+                ],
+                "url_list": [
+                  "www.google.com",
+                  "twitter.com"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "product_certifications": [
+        {
+          "id": "1a",
+          "title": "disney",
+          "files": [
+            {
+              "id": "1",
+              "list": [
+                "P",
+                "Q"
+              ],
+              "name": "QQ",
+              "type": "PDF"
+            }
+          ],
+          "images": null
+        }
+      ],
+      "size_chart": {
+        "id": "ACC",
+        "height": 1,
+        "width": 2,
+        "thumb_url_list": [
+          "01.JPG",
+          "02.JPG"
+        ],
+        "url_list": [
+          "www.google.com",
+          "twitter.com"
+        ]
+      },
+      "is_cod_open": false,
+      "product_attributes": [
+        {
+          "id": "12",
+          "name": "pptv",
+          "values": [
+            {
+              "id": "LL",
+              "name": "waka"
+            }
+          ]
+        }
+      ],
+      "qc_reasons": [
+        {
+          "reason": "Illegal",
+          "sub_reasons": [
+            "R18",
+            "AV"
+          ]
+        }
+      ],
+      "update_time": 1652684619,
+      "create_time": 1652684619,
+      "delivery_services": [
+        {
+          "delivery_service_id": 12,
+          "delivery_option_name": "J\u0026T Express",
+          "delivery_service_status": false
+        }
+      ]
+    },
+    "want_err": false
+  }
+]
