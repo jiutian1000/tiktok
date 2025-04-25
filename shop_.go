@@ -5,10 +5,12 @@ import (
 )
 
 type Shop struct {
-	ShopID   string      `json:"shop_id"`
-	ShopName string      `json:"shop_name"`
-	Region   string      `json:"region"`
-	Type     json.Number `json:"type"`
+	ShopID     string      `json:"shop_id"`
+	ShopName   string      `json:"shop_name"`
+	Region     string      `json:"region"`
+	ShopCode   string      `json:"shop_code"`
+	ShopCipher string      `json:"shop_cipher"`
+	Type       json.Number `json:"type"`
 }
 
 type ShopList struct {
